@@ -1,0 +1,284 @@
+body {
+	font-size: 15px;
+    line-height: 1.52;
+    color: #717f86;
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#banner{
+    background: url(../img/suruihayazisiz.jpg) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    opacity: 0.9;
+
+   
+}
+@media only screen and (min-width: 400px) {
+    #banner{
+        background: url(../img/suruihasq.jpg) no-repeat center top;
+        background-size: cover;
+        width: 100%;
+        min-height: 770px;
+        opacity: 0.9;
+
+    }
+}
+
+#banner h2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 64px;
+    text-transform:uppercase;
+    font-weight:400;
+    filter: alpha(opacity=90);
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
+#banner p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 64px;
+    text-transform:uppercase;
+    font-weight:400;
+    filter: alpha(opacity=90);
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.section-padding{
+    padding: 60px 0px;
+}
+.logo-name{
+    font-size: 55px;
+    margin-top: 180px;
+    font-family: 'PT Sans', sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    filter: alpha(opacity=90);
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.closetn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.menu-icon
+{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.header-h {
+    color: #000;
+    font-size: 46px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+}
+.header-p {
+    color: #9699a6;
+    font-size: 16px;
+}
+.msg-row {
+    margin-top: 56px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.bg-13 {background-color: #f04e4e;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.bg-1 {
+    background-color: #fecc17;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.bg-14 {
+    background-color: #ccdb38;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.dark-blue {
+    color: #31364c;
+    font-size: 24px;
+    margin-top: 0;
+}
+.light-blue {
+    color: #9699a6;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+.media-body {
+    margin-left: 10px;
+    padding-left: 13px;
+}
+.media-2 {
+    margin-top: 30px;
+}
+
+.heading{
+    font-family: 'PT Sans', sans-serif;
+    color: #FFB03B;
+    font-size: 24px;
+}
+.marb-35{
+    margin-bottom: 35px;
+}
+.details-list{
+    margin-top: 20px;
+}
+.details-list ul li i {
+    margin-right: 10px;
+    color: #ffb03b;
+}
+#about img
+{
+    border: 5px solid rgb(255, 176, 59);
+    border-radius: 2px;
+}
+#resources{
+    background: url('../img/suruihakaynak.jpg') no-repeat;
+    background-size: cover;
+}
+.left-images img {
+    height: 308px;
+    width: 100%;
+}
+.left-images{
+    padding: 0px;
+}
+.details-text {
+    border-right: 2px solid #841b2d;
+}
+.details-text {
+    background-color: rgba(14, 4, 4, 0.70);
+    border-right: 2px solid #A87F41;
+    padding: 20px 20px 30px 30px;
+    overflow: auto;
+}
+.content-holder h2 {
+    color: #FFf;
+    font-size: 32px;
+    padding-bottom: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+.content-holder address strong {
+    color: #FFf;
+    padding: 10px 0px;
+}
+.details-text li {
+    color: #fff;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.btn-read-more:hover
+{
+    color: #000;
+}
+#Container .mix{
+    display: none;
+}
+
+.list-horizontal li {
+    display: inline-block;
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .content-holder h2 {
+        font-size: 23px;
+    }
+    .details-text p {
+        line-height: 16.6px;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #A87F41;
+    }
+}
+@media (min-width: 20px) and (max-width: 450px) {
+    .menu-restaurant {
+    width: 100%;
+    }
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #A87F41;
+    }
+    .header-h {
+        font-size: 35px;
+    }
+    .header-p, body{
+        font-size: 14px;
+    }
+    .about-info, .mr-15{
+        margin-bottom: 15px;
+    }
+    #banner h2{
+        font-size: 25px;
+    }
+    #banner p{
+        font-size: 25px;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
