@@ -100,7 +100,7 @@ table {
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
-.closetn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -257,9 +257,6 @@ table {
     }
 }
 @media (min-width: 20px) and (max-width: 450px) {
-    .menu-restaurant {
-    width: 100%;
-    }
     .details-text {
         border:0px;
         border-bottom: 2px solid #A87F41;

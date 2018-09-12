@@ -16,20 +16,32 @@ function closeNav() {
 
   var teamMapping = {}
   var teamScores = {}
+
   
   $.getJSON(url, function (data) {
+
+      const location = window.location.href;
+      var teamWord = "Takım"
+      var totalWord = "Toplam"
+      var dayWord = "Gün"
+
+      if(location.includes("index-en")){
+          teamWord = "Team"
+          totalWord = "Total"
+          dayWord = "Day"
+      } 
 
       $.each(data, function (key, entry) {
         var dayScores = {}
         if( key === 0 ){
           
-          $("#results-pills").append('<li class="active"><a href="#day' + (key + 1) + '" data-toggle="tab">' + entry.day + '</a></li>');
-          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade in active" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">Takım</th></tr></thead><tbody></tbody></table></div>');
+          $("#results-pills").append('<li class="active"><a href="#day' + (key + 1) + '" data-toggle="tab">' + dayWord + entry.day + '</a></li>');
+          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade in active" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');
 
         }else{
           
-          $("#results-pills").append('<li><a href="#day' + (key + 1) + '" data-toggle="tab">' + entry.day + '</a></li>');
-          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">Takım</th></tr></thead><tbody></tbody></table></div>');        
+          $("#results-pills").append('<li><a href="#day' + (key + 1) + '" data-toggle="tab">' + dayWord + entry.day + '</a></li>');
+          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
         
         }
         var resultsForDay = entry
@@ -50,7 +62,7 @@ function closeNav() {
 
         });
 
-        $("#day" + (key + 1) + " table thead tr").append('<th scope="col">Toplam</th>');
+        $("#day" + (key + 1) + " table thead tr").append('<th scope="col">' + totalWord + '</th>');
         for (var team in dayScores){
           if(!(team in teamScores)){
             teamScores[team] = dayScores[team]
@@ -62,9 +74,9 @@ function closeNav() {
 
       })
 
-      $("#results-pills").append('<li><a href="#total" data-toggle="tab">Toplam</a></li>');
-      $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="total"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">Takım</th></tr></thead><tbody></tbody></table></div>');        
-      $("#total table thead tr").append('<th scope="col">Toplam Skor</th>');
+      $("#results-pills").append('<li><a href="#total" data-toggle="tab">' + totalWord + '</a></li>');
+      $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="total"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
+      $("#total table thead tr").append('<th scope="col">' + totalWord + '</th>');
 
       var scores = Object.keys(teamScores).map(function(key) {
         return [key, teamScores[key]];
@@ -83,7 +95,6 @@ function closeNav() {
 
 
 
-  // Add smooth scrolling to all links in navbar + footer link
   $(".sidenav a").on('click', function(event) {
     var hash = this.hash;
     if (hash) {
