@@ -24,11 +24,12 @@ function closeNav() {
       var teamWord = "Takım"
       var totalWord = "Toplam"
       var dayWord = "Gün"
-
+      var score = "Skor"
       if(location.includes("index-en")){
           teamWord = "Team"
           totalWord = "Total"
           dayWord = "Day"
+          score = "Score"
       } 
 
       $.each(data, function (key, entry) {
@@ -36,12 +37,12 @@ function closeNav() {
         if( key === 0 ){
           
           $("#results-pills").append('<li class="active"><a href="#day' + (key + 1) + '" data-toggle="tab">' + dayWord + entry.day + '</a></li>');
-          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade in active" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');
+          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade in active" id="day' + (key + 1) + '"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');
 
         }else{
           
           $("#results-pills").append('<li><a href="#day' + (key + 1) + '" data-toggle="tab">' + dayWord + entry.day + '</a></li>');
-          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="day' + (key + 1) + '"><table class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
+          $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="day' + (key + 1) + '"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
         
         }
         var resultsForDay = entry
@@ -57,7 +58,7 @@ function closeNav() {
                 $("#day" + (key + 1) + " table tbody").append('<tr id="team' + (resultIndex  + 1)+ '"><th scope="col">' + result.team + '</th></tr>');        
             }
             dayScores[result.team] = dayScores[result.team] + result.score;
-            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td><strong>Skor: ' + result.score + '</strong><img src="' + result.image + '" class="img-thumbnail img-responsive" alt="' + result.team + '-'+ scenario.name + '"></td>') 
+            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td>' + score + ': ' + result.score + '</td>') 
           })
 
         });
@@ -69,7 +70,7 @@ function closeNav() {
           }else{
             teamScores[team] = teamScores[team] + dayScores[team]
           }
-          $('#day' + (key + 1) + ' #team' + (teamMapping[team] + 1)).append('<td><strong>Skor: ' + dayScores[team] + '</strong></td>') 
+          $('#day' + (key + 1) + ' #team' + (teamMapping[team] + 1)).append('<td>' + score + ': ' + dayScores[team] + '</td>') 
         }
 
       })
