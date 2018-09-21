@@ -279,3 +279,8 @@ table {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+td {
+	padding:5px;
+}
+
