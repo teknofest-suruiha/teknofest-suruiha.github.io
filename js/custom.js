@@ -25,11 +25,17 @@ function closeNav() {
       var totalWord = "Toplam"
       var dayWord = "Gün"
       var score = "Skor"
+      var area = "Alan"
+      var track = "Takip"
+      var detection = "Tanıma"
       if(location.includes("index-en")){
           teamWord = "Team"
           totalWord = "Total"
           dayWord = "Day"
           score = "Score"
+          area = "Area"
+          track = "Tracking"
+          detection = "Detection"
       } 
 
       $.each(data, function (key, entry) {
@@ -58,7 +64,7 @@ function closeNav() {
                 $("#day" + (key + 1) + " table tbody").append('<tr id="team' + (resultIndex  + 1)+ '"><th scope="col">' + result.team + '</th></tr>');        
             }
             dayScores[result.team] = dayScores[result.team] + result.score;
-            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td>' + score + ': ' + result.score + '</td>') 
+            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td>' + area + ': ' + result.area + ' ' + track + ': ' + result.tracking + ' ' + detection + ': ' + result.detection + ' ' + score + ': ' + result.score + '</td>') 
           })
 
         });
