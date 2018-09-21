@@ -3,43 +3,6 @@
 		"day" : "1",
 		"scenarios": [
 			{
-			"name" : "SCN1",
-			"results": [
-				{
-					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0
-					
-				},
-				{
-					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0
-					
-				},
-				{
-					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0
-					
-				},				
-				{
-					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0
-					
-				}
-			]
-			},
-			{
 			"name" : "SCN2",
 			"results": [
 				{
@@ -51,57 +14,24 @@
 				},
 				{
 					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
+					"area": 97.7705,
+					"tracking": 83.6824,
 					"detection": 0,
-					"score": 0					
+					"score": 100					
 				},
 				{
 					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0				
+					"area": 82.5563,
+					"tracking": 54.2137,
+					"detection": 10,
+					"score": 80.3330				
 				},				
 				{
 					"team": "Vist Team",
-					"area": 0,
+					"area": 89.2397,
 					"tracking": 0,
-					"detection": 0,
-					"score": 0				
-				}
-			]
-			},
-			{
-			"name" : "SCN3",
-			"results": [
-				{
-					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				},
-				{
-					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				},
-				{
-					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0				
-				},				
-				{
-					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0				
+					"detection": 10,
+					"score": 48.9966				
 				}
 			]
 			},
@@ -110,31 +40,31 @@
 			"results": [
 				{
 					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0				
+					"area": 72.9266,
+					"tracking": 35.0243,
+					"detection": 10,
+					"score": 79.7949				
 				},
 				{
 					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
+					"area": 58.9580,
+					"tracking": 49.0733,
 					"detection": 0,
-					"score": 0				
+					"score": 74.6516				
 				},
 				{
 					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
+					"area": 85.5190,
+					"tracking": 43.4631,
+					"detection": 17.3671,
+					"score": 100					
 				},				
 				{
 					"team": "Vist Team",
-					"area": 0,
+					"area": 73.6630,
 					"tracking": 0,
-					"detection": 0,
-					"score": 0				
+					"detection": 10,
+					"score": 52.2105				
 				}
 			]
 			}
