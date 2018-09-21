@@ -3,89 +3,137 @@
 		"day" : "1",
 		"scenarios": [
 			{
-			"name" : "scenario1",
+			"name" : "SCN1",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0
 					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0
 					
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0
 					
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0
 					
 				}
 			]
 			},
 			{
-			"name" : "scenario2",
+			"name" : "SCN2",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				}
 			]
 			},
 			{
-			"name" : "scenario3",
+			"name" : "SCN3",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				}
 			]
 			},
 			{
-			"name" : "scenario4",
+			"name" : "SCN4",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0				
 				}
 			]
@@ -96,85 +144,133 @@
 		"day" : "2",
 		"scenarios": [
 			{
-			"name" : "scenario1",
+			"name" : "SCN1",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				}
 			]
 			},
 			{
-			"name" : "scenario2",
+			"name" : "SCN2",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				}
 			]
 			},
 			{
-			"name" : "scenario3",
+			"name" : "SCN3",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				}
 			]
 			},
 			{
-			"name" : "scenario4",
+			"name" : "SCN4",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				}
 			]
@@ -185,43 +281,67 @@
 		"day" : "3",
 		"scenarios": [
 			{
-			"name" : "scenario1",
+			"name" : "SCN1",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				}
 			]
 			},
 			{
-			"name" : "scenario2",
+			"name" : "SCN2",
 			"results": [
 				{
 					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0					
 				},
 				{
-					"team": "İztek Onair",
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
 					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},				
 				{
 					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				}
 			]
