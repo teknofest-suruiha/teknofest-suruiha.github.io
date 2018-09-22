@@ -243,31 +243,31 @@
 			"results": [
 				{
 					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 72.656,
+					"tracking": 6.46169,
+					"detection": 10,
+					"score": 80.76946063						
 				},
 				{
 					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 59.2672,
+					"tracking": 26.5279,
+					"detection": 10,
+					"score": 92.18074556						
 				},
 				{
 					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 78.7248,
+					"tracking": 18.8036,
+					"detection": 10,
+					"score": 100						
 				},				
 				{
 					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 88.6,
+					"tracking": 6.46653,
+					"detection": 10,
+					"score": 94.38713221						
 				}
 			]
 			}
