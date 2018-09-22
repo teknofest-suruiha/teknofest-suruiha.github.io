@@ -78,64 +78,31 @@
 			"results": [
 				{
 					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
+					"area": 24.359,
+					"tracking": 11.2622,
+					"detection": 10,
+					"score": 42.05					
 				},
 				{
 					"team": "İztech Onair",
-					"area": 0,
+					"area": 25.0591,
 					"tracking": 0,
-					"detection": 0,
-					"score": 0					
+					"detection": 10,
+					"score": 30.6281					
 				},
 				{
 					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
+					"area": 36.0517,
+					"tracking": 56.9738,
+					"detection": 10,
+					"score": 100					
 				},				
 				{
 					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				}
-			]
-			},
-			{
-			"name" : "SCN2",
-			"results": [
-				{
-					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				},
-				{
-					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				},
-				{
-					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
-				},				
-				{
-					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 45.0251,
+					"tracking": 37.6348,
+					"detection": 10,
+					"score": 86.5880				
 				}
 			]
 			},
@@ -147,6 +114,39 @@
 					"area": 0,
 					"tracking": 0,
 					"detection": 0,
+					"score": 0					
+				},
+				{
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0					
+				},
+				{
+					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0					
+				},				
+				{
+					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				}
+			]
+			},
+			{
+			"name" : "SCN5",
+			"results": [
+				{
+					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
 					"score": 0						
 				},
 				{
@@ -173,7 +173,73 @@
 			]
 			},
 			{
-			"name" : "SCN4",
+			"name" : "SCN6",
+			"results": [
+				{
+					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},
+				{
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},
+				{
+					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},				
+				{
+					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				}
+			]
+			},
+			{
+			"name" : "SCN7",
+			"results": [
+				{
+					"team": "Hadsafha",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},
+				{
+					"team": "İztech Onair",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},
+				{
+					"team": "Test Uçuşu",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				},				
+				{
+					"team": "Vist Team",
+					"area": 0,
+					"tracking": 0,
+					"detection": 0,
+					"score": 0						
+				}
+			]
+			},
+			{
+			"name" : "SCN8",
 			"results": [
 				{
 					"team": "Hadsafha",
