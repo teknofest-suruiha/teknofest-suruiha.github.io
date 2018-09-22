@@ -6,6 +6,11 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+
 
 
 (function($) {
@@ -64,7 +69,7 @@ function closeNav() {
                 $("#day" + (key + 1) + " table tbody").append('<tr id="team' + (resultIndex  + 1)+ '"><th scope="col">' + result.team + '</th></tr>');        
             }
             dayScores[result.team] = dayScores[result.team] + result.score;
-            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td>' + area + ': ' + result.area + ' ' + track + ': ' + result.tracking + ' ' + detection + ': ' + result.detection + ' ' + score + ': ' + result.score + '</td>') 
+            $('#day' + (key + 1) + ' #team' + (teamMapping[result.team] + 1)).append('<td>' + area + ': ' + result.area + ' ' + track + ': ' + result.tracking + ' ' + detection + ': ' + result.detection + ' ' + score + ': ' + round(result.score, 4) + '</td>') 
           })
 
         });
@@ -76,7 +81,7 @@ function closeNav() {
           }else{
             teamScores[team] = teamScores[team] + dayScores[team]
           }
-          $('#day' + (key + 1) + ' #team' + (teamMapping[team] + 1)).append('<td>' + score + ': ' + dayScores[team] + '</td>') 
+          $('#day' + (key + 1) + ' #team' + (teamMapping[team] + 1)).append('<td>' + score + ': ' + round(dayScores[team], 4) + '</td>') 
         }
 
       })
@@ -96,7 +101,7 @@ function closeNav() {
 
       for(var pair in scores){
         $("#total table tbody").append('<tr id="team' + (teamMapping[scores[pair][0]] + 1)+ '"><td scope="col" class="text-center">' + scores[pair][0] + '</td></tr>');        
-        $('#total #team' + (teamMapping[scores[pair][0]] + 1)).append('<td class="text-center">' + scores[pair][1] + '</td>') 
+        $('#total #team' + (teamMapping[scores[pair][0]] + 1)).append('<td class="text-center">' + round(scores[pair][1], 4) + '</td>') 
       }
   });
 
