@@ -35,12 +35,12 @@ function round(value, decimals) {
           "score": 92            
         },        
         {
-          "team": "Vist Team",
+          "team": "Vist",
           "score": 90.4            
         }
       ]
 
-  var finalScores = [["Test Uçuşu", 82.885196], ["Vist Team", 84.728677], ["Hadsafha", 75.141011], ["İztech Onair", 76.667647]]
+  var finalScores = [["Test Uçuşu", 82.885196], ["Vist", 84.728677], ["Hadsafha", 75.141011], ["İztech Onair", 76.667647]]
   $.getJSON(url, function (data) {
 
       const location = window.location.href;
