@@ -274,43 +274,44 @@
 		]
 	},
 	{
+	
 		"day" : "3",
 		"scenarios": [
 			{
-			"name" : "SCN1",
+			"name" : "SCN10",
 			"results": [
 				{
 					"team": "Hadsafha",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0					
+					"area": 33.9952,
+					"tracking": 41.4421,
+					"detection": 10,
+					"score": 100					
 				},
 				{
 					"team": "İztech Onair",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 30.1128,
+					"tracking": 19.7605,
+					"detection": 10,
+					"score": 68.03485901						
 				},
 				{
 					"team": "Test Uçuşu",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 19.5856,
+					"tracking": 7.18691,
+					"detection": 10,
+					"score": 41.43049319						
 				},				
 				{
 					"team": "Vist Team",
-					"area": 0,
-					"tracking": 0,
-					"detection": 0,
-					"score": 0						
+					"area": 30.414,
+					"tracking": 16.534,
+					"detection": 10,
+					"score": 64.13499093						
 				}
 			]
 			},
 			{
-			"name" : "SCN2",
+			"name" : "SCN9",
 			"results": [
 				{
 					"team": "Hadsafha",
