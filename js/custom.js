@@ -21,7 +21,25 @@ function round(value, decimals) {
 
   var teamMapping = {}
   var teamScores = {}
-
+  var reportScores = [
+        {
+          "team": "Hadsafha",
+          "score": 79.4          
+        },
+        {
+          "team": "İztech Onair",
+          "score": 88.6            
+        },
+        {
+          "team": "Test Uçuşu",
+          "score": 92            
+        },        
+        {
+          "team": "Vist Team",
+          "score": 90.4            
+        }
+      ]
+  
   
   $.getJSON(url, function (data) {
 
@@ -33,6 +51,8 @@ function round(value, decimals) {
       var area = "Alan"
       var track = "Takip"
       var detection = "Tanıma"
+      var reportWord = "Rapor"
+      var scenarioKeyword = "Senaryo"
       if(location.includes("index-en")){
           teamWord = "Team"
           totalWord = "Total"
@@ -41,6 +61,8 @@ function round(value, decimals) {
           area = "Area"
           track = "Tracking"
           detection = "Detection"
+          reportWord = "Report"
+          scenarioKeyword = "Scenario"
       } 
 
       $.each(data, function (key, entry) {
@@ -88,8 +110,8 @@ function round(value, decimals) {
 
       $("#results-pills").append('<li><a href="#total" data-toggle="tab">' + totalWord + '</a></li>');
       $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="total"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
-      $("#total table thead tr").append('<th scope="col">' + totalWord + '</th>');
-
+      $("#total table thead tr").append('<th scope="col">' + scenarioKeyword + ' ' + totalWord + '</th>');
+      $("#total table thead tr").append('<th scope="col">' + reportWord + '</th>');
       var scores = Object.keys(teamScores).map(function(key) {
         return [key, teamScores[key]];
       });
@@ -101,8 +123,14 @@ function round(value, decimals) {
 
       for(var pair in scores){
         $("#total table tbody").append('<tr id="team' + (teamMapping[scores[pair][0]] + 1)+ '"><td scope="col" class="text-center">' + scores[pair][0] + '</td></tr>');        
-        $('#total #team' + (teamMapping[scores[pair][0]] + 1)).append('<td class="text-center">' + round(scores[pair][1], 4) + '</td>') 
+        $('#total #team' + (teamMapping[scores[pair][0]] + 1)).append('<td class="text-center">' + round(scores[pair][1], 4) + '</td>')
       }
+
+      for(var pair in reportScores){
+        $('#total #team' + (teamMapping[reportScores[pair].team] + 1)).append('<td class="text-center">' + round(reportScores[pair].score, 4) + '</td>')
+      }
+
+
   });
 
 
