@@ -39,8 +39,8 @@ function round(value, decimals) {
           "score": 90.4            
         }
       ]
-  
-  
+
+  var finalScores = [["Test Uçuşu", 82.885196], ["Vist Team", 84.728677], ["Hadsafha", 75.141011], ["İztech Onair", 76.667647]]
   $.getJSON(url, function (data) {
 
       const location = window.location.href;
@@ -112,22 +112,29 @@ function round(value, decimals) {
       $("#results-tab").append('<div role="tabpanel" class="table-responsive tab-pane fade" id="total"><table align="center" class="table-hover table-bordered"><thead><tr><th scope="col">' + teamWord + '</th></tr></thead><tbody></tbody></table></div>');        
       $("#total table thead tr").append('<th scope="col">' + scenarioKeyword + ' ' + totalWord + '</th>');
       $("#total table thead tr").append('<th scope="col">' + reportWord + '</th>');
+      $("#total table thead tr").append('<th scope="col"> Final ' + score + '</th>');
       var scores = Object.keys(teamScores).map(function(key) {
         return [key, teamScores[key]];
       });
-
       // Sort the array based on the second element
-      scores.sort(function(first, second) {
+      finalScores.sort(function(first, second) {
         return second[1] - first[1];
       });
 
+      for(var pair in finalScores){
+        $("#total table tbody").append('<tr id="team' + (teamMapping[finalScores[pair][0]] + 1)+ '"><td scope="col" class="text-center">' + finalScores[pair][0] + '</td></tr>');        
+
+      } 
       for(var pair in scores){
-        $("#total table tbody").append('<tr id="team' + (teamMapping[scores[pair][0]] + 1)+ '"><td scope="col" class="text-center">' + scores[pair][0] + '</td></tr>');        
         $('#total #team' + (teamMapping[scores[pair][0]] + 1)).append('<td class="text-center">' + round(scores[pair][1], 4) + '</td>')
       }
 
       for(var pair in reportScores){
         $('#total #team' + (teamMapping[reportScores[pair].team] + 1)).append('<td class="text-center">' + round(reportScores[pair].score, 4) + '</td>')
+      }
+
+      for(var pair in finalScores){
+        $('#total #team' + (teamMapping[finalScores[pair][0]] + 1)).append('<td class="text-center">' + round(finalScores[pair][1], 4) + '</td>')
       }
 
 
