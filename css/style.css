@@ -222,6 +222,10 @@ table {
     color: #FFf;
     padding: 10px 0px;
 }
+.content-holder a {
+    color: #FFf;
+    text-decoration: underline;
+}
 .details-text li {
     color: #fff;
     line-height: 26px;
